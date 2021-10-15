@@ -1,0 +1,33 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color:azure;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: ;
+    margin: 0 auto;
+    max-width: 1050px;
+    row-gap: 20px;
+}
+
+.slider_img {
+    display: block;
+    width: 100%;
+}
+
+.text {
+    font-size: 35px;
+    flex-basis: 80%;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 20%;
+    gap: 10px;
+
+}
