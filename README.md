@@ -1,1 +1,1 @@
-# cssMemSlider
+https://olgatolpykina.github.io/cssMemSlider/cssMemSlider/
