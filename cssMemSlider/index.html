@@ -3,22 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>cssMemSlider</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="slider">
-          <img class="slider_img" src="img/squirrel.jpg" alt="">
+        <input class="controls_input" type="radio" name="slide" id="slide1" checked>
+        <input class="controls_input" type="radio" name="slide" id="slide2">
+        <input class="controls_input" type="radio" name="slide" id="slide3">
+        <input class="controls_input" type="radio" name="slide" id="slide4">
+        <input class="controls_input" type="radio" name="slide" id="slide5">
+        <div class="slider-container">
+            <div class="slider-inner-container">
+                <img class="slider_img" src="img/squirrel.jpg" alt="">
+                <img class="slider_img" src="img/lion.jpg" alt="">
+                <img class="slider_img" src="img/ferret.jpg" alt="">
+                <img class="slider_img" src="img/dog.jpg" alt="">
+                <img class="slider_img" src="img/owl.jpg" alt="">
+            </div>
         </div>
-        <p class="text">Text</p>
+        <div class="text-container">
+            <div class="text-inner-container">
+                <p class="text">Text</p>
+                <p class="text">TextText</p>
+                <p class="text">TextTextText</p>
+                <p class="text">TextTextTextText</p>
+                <p class="text">TextTextTextTextText</p>
+            </div>
+        </div>
         <div class="controls">
-          <input class="controls_item" type="radio" name="slide">
-          <input class="controls_item" type="radio" name="slide">
-          <input class="controls_item" type="radio" name="slide">
-          <input class="controls_item" type="radio" name="slide">
-          <input class="controls_item" type="radio" name="slide">
+          <label class="controls_label" for="slide1"></label>
+          <label class="controls_label" for="slide2"></label>
+          <label class="controls_label" for="slide3"></label>
+          <label class="controls_label" for="slide4"></label>
+          <label class="controls_label" for="slide5"></label>
         </div>
       </div>
 </body>
