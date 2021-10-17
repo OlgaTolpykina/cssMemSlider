@@ -5,7 +5,7 @@ html {
 body {
     box-sizing: border-box;
     margin: 0;
-    padding-top: 7rem;
+    padding-top: 2rem;
     min-height: 100vh;
     background: url('img/background.jpg') no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@ body {
     align-items: center;
     margin: 0 auto;
     padding: 2rem;
-    max-width: 40%;
+    max-width: 50%;
     row-gap: 3rem;
     background-color: rgb(247, 236, 92);
     box-shadow: 0 0 10px rgb(247, 236, 92);
@@ -46,7 +46,7 @@ body {
 
 .text-container {
     overflow: hidden;
-    flex-basis: 60%;
+    flex-basis: 70%;
 }
 
 .text-inner-container {
@@ -64,7 +64,7 @@ body {
 .controls {
     display: flex;
     justify-content: flex-end;
-    flex-basis: 40%;
+    flex-basis: 30%;
     gap: 1rem;
 
 }
@@ -74,8 +74,8 @@ body {
 }
 
 .controls_label {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     padding: 0.7rem;
     cursor: pointer;
     box-sizing: border-box;
@@ -142,4 +142,39 @@ body {
 
 #slide5:checked ~ .text-container .text-inner-container {
     transform: translateX(-80%);
+}
+
+@media (max-width: 1100px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .text-container {
+        max-width: 100%;
+        order: 2;
+    }
+
+    .controls {
+        order: 1;
+    }
+}
+
+@media (max-width: 660px) {
+    body {
+        padding-top: 10rem;
+    }
+
+    .wrapper {
+        padding: 1rem;
+        row-gap: 1rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .controls_label {
+        width: 2rem;
+        height: 2rem;
+    }
 }
